@@ -1,0 +1,227 @@
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\csc.exe
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\csc.exe.config
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\csc.rsp
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\csi.exe
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\csi.exe.config
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\csi.rsp
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.AppContext.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Collections.Immutable.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Console.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Diagnostics.Process.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.IO.Compression.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.IO.FileSystem.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.IO.Pipes.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Reflection.Metadata.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Security.AccessControl.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Security.Claims.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Security.Principal.Windows.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Threading.Thread.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.ValueTuple.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Xml.XmlDocument.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Xml.XPath.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\vbc.exe
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\vbc.exe.config
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\vbc.rsp
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\VBCSCompiler.exe
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\roslyn\VBCSCompiler.exe.config
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\NeoHos.dll.config
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\NeoHos.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\NeoHos.pdb
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\obj\Debug\NeoHos.csprojResolveAssemblyReference.cache
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\obj\Debug\NeoHos.csproj.CoreCompileInputs.cache
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\obj\Debug\NeoHos.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\NeoHos\obj\Debug\NeoHos.pdb
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csc.exe
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csc.exe.config
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csc.rsp
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csi.exe
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csi.exe.config
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csi.rsp
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.AppContext.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Collections.Immutable.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Console.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Diagnostics.Process.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.IO.Compression.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.IO.FileSystem.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.IO.Pipes.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Reflection.Metadata.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.AccessControl.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Claims.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Principal.Windows.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Threading.Thread.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.ValueTuple.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Xml.XmlDocument.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Xml.XPath.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\vbc.exe
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\vbc.exe.config
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\vbc.rsp
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\VBCSCompiler.exe
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\VBCSCompiler.exe.config
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\NeoHos.dll.config
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\NeoHos.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\NeoHos.pdb
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\obj\Debug\NeoHos.csprojResolveAssemblyReference.cache
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\obj\Debug\NeoHos.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\obj\Debug\NeoHos.pdb
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csc.exe
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csc.exe.config
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csc.rsp
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csi.exe
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csi.exe.config
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\csi.rsp
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.AppContext.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Collections.Immutable.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Console.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Diagnostics.Process.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.IO.Compression.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.IO.FileSystem.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.IO.Pipes.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Reflection.Metadata.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.AccessControl.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Claims.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Security.Principal.Windows.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Threading.Thread.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.ValueTuple.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Xml.XmlDocument.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Xml.XPath.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\vbc.exe
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\vbc.exe.config
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\vbc.rsp
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\VBCSCompiler.exe
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\VBCSCompiler.exe.config
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\NeoHos.dll.config
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\NeoHos.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\NeoHos.pdb
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\obj\Debug\NeoHos.csprojResolveAssemblyReference.cache
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\obj\Debug\NeoHos.csproj.CoreCompileInputs.cache
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\obj\Debug\NeoHos.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\obj\Debug\NeoHos.pdb
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\desktop.ini
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\roslyn\desktop.ini
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\IronRuby.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\IronRuby.Libraries.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\IronRuby.Libraries.Yaml.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Jurassic.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Microsoft.Dynamic.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Microsoft.Scripting.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Microsoft.Scripting.Metadata.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\SassAndCoffee.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Documents.SpreadsheetStreaming.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.35.Extensions.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.40.Extensions.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.Runtime.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.Web.40.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.Design.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.Device.Detection.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.Mvc.Contrib.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.Mvc.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.UI.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.UI.Skins.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Windows.Zip.dll
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Documents.SpreadsheetStreaming.xml
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.xml
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.35.Extensions.xml
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.40.Extensions.xml
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.Device.Detection.xml
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.UI.xml
+D:\008_Project makaruk\ProjectNeoHos_V2_0\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Windows.Zip.xml
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\IronRuby.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\IronRuby.Libraries.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\IronRuby.Libraries.Yaml.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Jurassic.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Microsoft.Dynamic.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Microsoft.Scripting.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Microsoft.Scripting.Metadata.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\SassAndCoffee.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.35.Extensions.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.40.Extensions.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.Runtime.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.Web.40.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.Mvc.Contrib.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.Mvc.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Windows.Zip.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Documents.SpreadsheetStreaming.xml
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.xml
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.35.Extensions.xml
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.OpenAccess.40.Extensions.xml
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.Device.Detection.xml
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.UI.xml
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Windows.Zip.xml
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.Design.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.Device.Detection.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.UI.dll
+D:\008_Project_makaruk\Project_NeoHos_02\04_Coding\NeoHos_V1_00\NeoHos\bin\Telerik.Web.UI.Skins.dll

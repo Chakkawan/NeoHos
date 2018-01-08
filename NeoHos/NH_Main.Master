@@ -1,0 +1,384 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NH_Main.master.cs" Inherits="NeoHos.NH_Main" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/LogoNeo3.png">
+    <title>NeoHos</title>
+    <!-- Icons -->
+    <link href="vendors/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/css/simple-line-icons.min.css" rel="stylesheet">
+
+    <!-- Main styles for this application -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/customtod.css" rel="stylesheet">
+</head>
+<body style="font-family: sans-serif">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <!-- Header-->
+        <header class="app-header navbar">
+            <asp:Image ID="LogoNeoHos" runat="server" src="img/LogoNeo.png" CssClass="navbar-brand" />
+            <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="nav navbar-nav ml-auto">
+                <button class="navbar-toggler aside-menu-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <li class="nav-item dropdown d-md-down-none">
+                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                        <div class="dropdown-header text-center">
+                            <strong>You have 5 notifications</strong>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-md-down-none">
+                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-envelope-letter"></i><span class="badge badge-pill badge-info">7</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header text-center">
+                            <strong>Account</strong>
+                        </div>
+                        <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i>Updates<span class="badge badge-info">42</span></a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i>Messages<span class="badge badge-success">42</span></a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i>Tasks<span class="badge badge-danger">42</span></a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-comments"></i>Comments<span class="badge badge-warning">42</span></a>
+                        <div class="dropdown-header text-center">
+                            <strong>Settings</strong>
+                        </div>
+                        <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i>Settings</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-usd"></i>Payments<span class="badge badge-dark">42</span></a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-file"></i>Projects<span class="badge badge-primary">42</span></a>
+                        <div class="divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fa fa-shield"></i>Lock Account</a>
+                        <a class="dropdown-item" href="NH_Login.aspx"><i class="fa fa-lock"></i>Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </header>
+
+        <div class="app-body">
+            <!-- Patient Profile-->
+            <div class="sidebar" style="height: 900px;">
+                <nav class="sidebar-nav" style="height: 500px;">
+                    <div class="row" style="margin-left: -2px; width: 100%;">
+                        <div style="float: left; width: 45%;">
+                            <img id="ImagePatient" src="img/001.png" class="imagePatient" style="padding: 0;">
+                        </div>
+                        <div style="float: left; width: 55%;">
+                            <h5>HN:
+                                <asp:Label ID="PT_Hn" runat="server" Text="1234567"></asp:Label></h5>
+                            <h6>CID:
+                                <asp:Label ID="PT_Cid" runat="server" Text="1234567890123"></asp:Label></h6>
+                            <h6>ชื่อ:
+                                <asp:Label ID="PT_Fname" runat="server" Text="รชตะ"></asp:Label></h6>
+                            <h6>สกุล:
+                                <asp:Label ID="PT_Lname" runat="server" Text="จิตรเอื้อ"></asp:Label></h6>
+                        </div>
+                    </div>
+                    <div style="margin-left: 5px;">
+                        <table>
+                            <tr>
+                                <h6>อายุ:
+                                    <asp:Label ID="PT_Age" runat="server" Text="25 ปี 5เดือน 25วัน"></asp:Label></h6>
+                            </tr>
+                            <tr>
+                                <h6>กรุ๊ปเลือด:
+                                    <asp:Label ID="PT_BloodType" runat="server" Text="A positive"></asp:Label></h6>
+                            </tr>
+                            <tr>
+                                <h6>สถานะบุคคล:
+                                    <asp:Label ID="PT_StatusPerson" runat="server" Text="test"></asp:Label></h6>
+                            </tr>
+                            <tr>
+                                <h6>สิทธิการรักษา:
+                                    <asp:Label ID="PT_Insurance" runat="server" Text="test"></asp:Label></h6>
+                            </tr>
+                            <tr>
+                                <h6>แพ้ยา:
+                                    <asp:Label ID="PT_Beallergic" runat="server" Text="test"></asp:Label></h6>
+                            </tr>
+                            <tr>
+                                <h6>โรคประจำตัว:
+                                    <asp:Label ID="PT_CongDisease" runat="server" Text="test"></asp:Label></h6>
+                            </tr>
+                            <tr>
+                                <h6>เคยรับยา:
+                                    <asp:Label ID="PT_ToGetMed" runat="server" Text="test"></asp:Label></h6>
+                            </tr>
+                            <tr>
+                                <h6>Clinic:
+                                    <asp:Label ID="PT_Clinic" runat="server" Text="test"></asp:Label></h6>
+                            </tr>
+                            <tr>
+                                <h6>การคัดกรอง:
+                                    <asp:Label ID="PT_Triage" runat="server" Text="test"></asp:Label></h6>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- ความเสียงโรคหัวใจ-->
+                    <div class="card" style="margin: 2px; margin-bottom: 0rem;">
+                        <table class="table table-responsive-sm table-bordered table-striped table-sm"
+                            style="width: 100%;">
+                            <tbody style="color: black;">
+                                <tr>
+                                    <td style="text-align: right;"><b>BMI</b></td>
+                                    <td class="text-center">
+                                        <asp:Label ID="PT_BMI" runat="server" Text="111"></asp:Label>
+                                    </td>
+                                    <td style="text-align: right;" colspan="3"><b>CV risk Score</b></td>
+                                    <td>
+                                        <asp:Label ID="PT_CV" runat="server" Text="111"></asp:Label></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;"><b>eGFR</b></td>
+                                    <td class="text-center">
+                                        <asp:Label ID="PT_eGFR" runat="server" Text="111"></asp:Label>
+                                    </td>
+                                    <td style="text-align: right;"><b>Cr:</b></td>
+                                    <td class="text-center">
+                                        <asp:Label ID="PT_Cr" runat="server" Text="111"></asp:Label>
+                                    </td>
+                                    <td style="text-align: right;"><b>CKD</b></td>
+                                    <td class="text-center">
+                                        <asp:Label ID="PT_Ckd" runat="server" Text="111"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;"><b>PEFR</b></td>
+                                    <td style="text-align: center;">
+                                        <asp:Label ID="PT_PefrLM" runat="server" Text="111"></asp:Label>
+                                    </td>
+                                    <td style="text-align: left;">L/min</td>
+                                    <td style="text-align: right;"><b>PEFR</b></td>
+                                    <td style="text-align: center;">
+                                        <asp:Label ID="PT_Pefr" runat="server" Text="111"></asp:Label>
+                                    </td>
+                                    <td style="text-align: left;">%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- PH/FH-->
+                    <div class="card" style="margin: 2px; margin-bottom: 0rem;">
+                        <div class="card-body" style="padding: 1px;">
+                            <div class="card-header" style="color: black; padding: 0px;">
+                                <h5><b>PH/FH</b></h5>
+                            </div>
+                            <div class="card">
+                                <div class="card-body" style="height: 60px; padding: 0px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin: 2px; margin-bottom: 0rem;">
+                        <div class="card-body" style="padding: 1px;">
+                            <div class="card-header" style="color: black; padding: 0px;">
+                                <h5><b>การรับวัคซีน</b></h5>
+                            </div>
+                            <div class="card">
+                                <div class="card-body" style="height: 60px; padding: 0px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin: 2px; margin-bottom: 0rem;">
+                        <div class="card-body" style="padding: 1px;">
+                            <div class="card-header" style="color: black; padding: 0px;">
+                                <h5><b>การผ่าตัด</b></h5>
+                            </div>
+                            <div class="card">
+                                <div class="card-body" style="height: 60px; padding: 0px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Start EMR -->
+                <div>
+                    <div class="nav-title" style="height: 400px; text-align: center;">
+                        <h5><b>EMR</b></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- End Patient Profile-->
+
+            <!-- Main content -->
+            <main class="main">
+                <!-- Start DR_Diagnosis-->
+                <div>
+                    <asp:ContentPlaceHolder ID="DR_DoctorRoom" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="MR_Medicalrecord" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="MR_SpecialClinic" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="AP_Appointment" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="SC_Screening" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div>
+                </div>
+            </main>
+
+            <!-- Menu-->
+            <aside class="aside-menu">
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="timeline" role="tabpanel">
+                        <div class="callout callout-info m-0 py-2">
+                            <button type="button" class="btn btn-primary btn-md btn-block">&nbsp; Fast Track</button>
+
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-info m-0 py-2">
+                            <button type="button" class="btn btn-primary btn-md btn-block">&nbsp; แสดงคิวรอตรวจ</button>
+
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-danger m-0 py-2">
+                            <asp:UpdatePanel runat="server">
+                                <ContentTemplate>
+                                    <asp:Button ID="Menu_Doctorroom" runat="server" Text="ตรวจรักษา" Skin="Metro" CssClass="btn btn-danger btn-md btn-block"
+                                        OnClick="Menu_Doctorroom_Click" />
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-info m-0 py-2">
+                            <button type="button" class="btn btn-primary btn-md btn-block">&nbsp; Lab</button>
+
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-info m-0 py-2">
+                            <button type="button" class="btn btn-primary btn-md btn-block">&nbsp; คัดกรอง</button>
+
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-info m-0 py-2">
+                            <button type="button" class="btn btn-primary btn-md btn-block">&nbsp; X-ray</button>
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-info m-0 py-2">
+                            <button type="button" class="btn btn-primary btn-md btn-block">&nbsp; หัตถการ</button>
+                        </div>
+                        <hr class="mx-3 my-0">
+
+                        <!-- งานนัดหมายผู้ป่วย -->
+                        <div class="callout callout-info m-0 py-2">
+                            <asp:UpdatePanel runat="server">
+                                <ContentTemplate>
+                                    <asp:Button ID="Menu_Appointment" runat="server" Skin="Metro" CssClass="btn btn-primary btn-md btn-block"
+                                        Text="งานนัดหมายผู้ป่วย" OnClick="Menu_Appointment_Click" />
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-info m-0 py-2">
+                            <button type="button" class="btn btn-primary btn-md btn-block">&nbsp; Refer In</button>
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-info m-0 py-2">
+                            <button type="button" class="btn btn-primary btn-md btn-block">&nbsp; Refer Out</button>
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-info m-0 py-2">
+                            <button type="button" class="btn btn-primary btn-md btn-block">&nbsp; Admit</button>
+
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-info m-0 py-2">
+                            <asp:UpdatePanel runat="server">
+                                <ContentTemplate>
+                                    <asp:Button runat="server" ID="Menu_SC_Screening" Skin="Metro" CssClass="btn btn-primary btn-md btn-block"
+                                        text="Screening" OnClick="Menu_SC_Screening_Click"/>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <div class="callout callout-info m-0 py-2">
+                            <button type="button" class="btn btn-primary btn-md btn-block">&nbsp; เฝ้าระวัง</button>
+
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <!-- เวชระเบียน -->
+                        <div class="callout callout-info m-0 py-2">
+                            <asp:UpdatePanel runat="server">
+                                <ContentTemplate>
+                                    <asp:Button ID="Menu_Medicalrecord" runat="server" Skin="Metro" CssClass="btn btn-primary btn-md btn-block"
+                                        Text="เวชระเบียน" OnClick="Menu_Medicalrecord_Click" />
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                        <hr class="mx-3 my-0">
+                        <!-- คลินิกพิเศษ -->
+                        <div class="callout callout-info m-0 py-2">
+                            <asp:UpdatePanel runat="server">
+                                <ContentTemplate>
+                                    <asp:Button ID="Menu_SpecialClinic" runat="server" Skin="Metro" CssClass="btn btn-primary btn-md btn-block"
+                                        Text="คลินิกพิเศษ" OnClick="Menu_SpecialClinic_Click" />
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </form>
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/js/popper.min.js"></script>
+    <script src="vendors/js/bootstrap.min.js"></script>
+    <script src="vendors/js/pace.min.js"></script>
+
+    <!-- Plugins and scripts required by all views -->
+    <script src="vendors/js/Chart.min.js"></script>
+
+    <!-- CoreUI Pro main scripts -->
+    <script src="js/app.js"></script>
+
+    <script>var requireJS = ["vendors/js/jquery-ui.min.js"]; loadJS(requireJS, "js/views/draggable-cards.js");</script>
+    <!-- masket textbox-->
+    <script> 
+        loadCSS("vendors/css/daterangepicker.min.css");
+        loadCSS("vendors/css/select2.min.css");
+        var requireJS = [
+            "vendors/js/jquery.maskedinput.min.js",
+            "vendors/js/moment.min.js",
+            "vendors/js/select2.min.js",
+            "vendors/js/daterangepicker.min.js"
+        ];
+        loadJS(requireJS, "js/views/advanced-forms.js");
+    </script>
+    <!-- Costom Tod-->
+    <script src="js/views/customtod.js"></script>
+    <!--Calendar-->
+    <script>
+        loadCSS("vendors/css/fullcalendar.min.css");
+        var requireJS = [
+            "vendors/js/moment.min.js",
+            "vendors/js/fullcalendar.min.js",
+            "vendors/js/gcal.min.js",
+        ];
+        loadJS(requireJS, "js/views/calendar.js");
+    </script>
+
+</body>
+</html>

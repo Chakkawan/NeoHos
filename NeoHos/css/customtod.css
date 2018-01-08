@@ -1,0 +1,50 @@
+﻿body {
+}
+
+.panel-actions {
+    margin-top: -20px;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+    .panel-actions a {
+        color: #333;
+    }
+
+.panel-fullscreen {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}
+/* ------------------ Seperator --------------------*/
+div .seperator {
+    text-align: center;
+    margin-top: 0px;
+    width: 100%;
+    display: inline-block;
+}
+.seperator strong {
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+.seperator hr {
+    margin-top: -10px;
+}
+/* ------------------ Tab Control --------------------*/
+ul .tabcontrol100 {
+    width: 100px;
+    text-align: center;
+}
+div .btn-expand {
+    height: 26px;
+    width: 26px;
+} 
+

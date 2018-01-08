@@ -1,0 +1,1245 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4D62C29-F811-492E-B117-75516E2BE00A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NeoHos</RootNamespace>
+    <AssemblyName>NeoHos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronRuby, Version=1.1.3.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronRuby.1.1.3\lib\IronRuby.dll</HintPath>
+    </Reference>
+    <Reference Include="IronRuby.Libraries, Version=1.1.3.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronRuby.1.1.3\lib\IronRuby.Libraries.dll</HintPath>
+    </Reference>
+    <Reference Include="IronRuby.Libraries.Yaml, Version=1.1.3.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronRuby.1.1.3\lib\IronRuby.Libraries.Yaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Jurassic, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SassAndCoffee.0.5.1\lib\net40\Jurassic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Dynamic, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronRuby.1.1.3\lib\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronRuby.1.1.3\lib\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronRuby.1.1.3\lib\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="SassAndCoffee, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SassAndCoffee.0.5.1\lib\net40\SassAndCoffee.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Documents.SpreadsheetStreaming, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.OpenAccess, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.35.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.40.Extensions, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.40.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Runtime, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Web.40, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.DataAccess.Web.2016.2.822.1\lib\net40\Telerik.OpenAccess.Web.40.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Design, Version=2014.1.225.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\UI for ASP.NET AJAX Q1 2014\Bin45\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Device.Detection">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for ASP.NET AJAX Q1 2014\Bin45\Telerik.Web.Device.Detection.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Mvc, Version=2011.1.315.340, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\TelerikMvcExtensions.2011.1.315\lib\net40\Telerik.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Mvc.Contrib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Web.Mvc.Contrib.1.2.1\lib\Telerik.Web.Mvc.Contrib.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2014.1.225.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\UI for ASP.NET AJAX Q1 2014\Bin45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for ASP.NET AJAX Q1 2014\Bin45\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\2011.1.315\Black\editor.png" />
+    <Content Include="Content\2011.1.315\Black\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Black\loading.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Black\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Black\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Black\sprite.png" />
+    <Content Include="Content\2011.1.315\Black\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Black\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Black\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Default\editor.png" />
+    <Content Include="Content\2011.1.315\Default\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Default\loading.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Default\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Default\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Default\sprite.png" />
+    <Content Include="Content\2011.1.315\Default\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Default\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Default\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Forest\editor.png" />
+    <Content Include="Content\2011.1.315\Forest\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Forest\loading.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Forest\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Forest\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Forest\sprite.png" />
+    <Content Include="Content\2011.1.315\Forest\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Forest\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Forest\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Hay\editor.png" />
+    <Content Include="Content\2011.1.315\Hay\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Hay\loading.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Hay\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Hay\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Hay\sprite.png" />
+    <Content Include="Content\2011.1.315\Hay\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Hay\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Hay\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Office2007\editor.png" />
+    <Content Include="Content\2011.1.315\Office2007\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Office2007\loading.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Office2007\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Office2007\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Office2007\sprite.png" />
+    <Content Include="Content\2011.1.315\Office2007\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Office2007\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Office2007\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Office2010Black\editor.png" />
+    <Content Include="Content\2011.1.315\Office2010Black\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Office2010Black\loading.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Office2010Black\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Office2010Black\sprite.png" />
+    <Content Include="Content\2011.1.315\Office2010Black\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Office2010Black\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Office2010Black\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Outlook\editor.png" />
+    <Content Include="Content\2011.1.315\Outlook\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Outlook\loading.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Outlook\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Outlook\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Outlook\sprite.png" />
+    <Content Include="Content\2011.1.315\Outlook\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Outlook\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Outlook\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Simple\editor.png" />
+    <Content Include="Content\2011.1.315\Simple\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Simple\loading.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Simple\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Simple\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Simple\sprite.png" />
+    <Content Include="Content\2011.1.315\Simple\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Simple\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Simple\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Sitefinity\editor.png" />
+    <Content Include="Content\2011.1.315\Sitefinity\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Sitefinity\loading.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Sitefinity\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Sitefinity\sprite.png" />
+    <Content Include="Content\2011.1.315\Sitefinity\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Sitefinity\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Sitefinity\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Sunset\editor.png" />
+    <Content Include="Content\2011.1.315\Sunset\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Sunset\loading.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Sunset\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Sunset\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Sunset\sprite.png" />
+    <Content Include="Content\2011.1.315\Sunset\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Sunset\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Sunset\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\telerik.black.min.css" />
+    <Content Include="Content\2011.1.315\telerik.common.min.css" />
+    <Content Include="Content\2011.1.315\telerik.default.min.css" />
+    <Content Include="Content\2011.1.315\telerik.forest.min.css" />
+    <Content Include="Content\2011.1.315\telerik.hay.min.css" />
+    <Content Include="Content\2011.1.315\telerik.office2007.min.css" />
+    <Content Include="Content\2011.1.315\telerik.office2010black.min.css" />
+    <Content Include="Content\2011.1.315\telerik.outlook.min.css" />
+    <Content Include="Content\2011.1.315\telerik.rtl.min.css" />
+    <Content Include="Content\2011.1.315\telerik.simple.min.css" />
+    <Content Include="Content\2011.1.315\telerik.sitefinity.min.css" />
+    <Content Include="Content\2011.1.315\telerik.sunset.min.css" />
+    <Content Include="Content\2011.1.315\telerik.telerik.min.css" />
+    <Content Include="Content\2011.1.315\telerik.vista.min.css" />
+    <Content Include="Content\2011.1.315\telerik.web20.min.css" />
+    <Content Include="Content\2011.1.315\telerik.webblue.min.css" />
+    <Content Include="Content\2011.1.315\telerik.windows7.min.css" />
+    <Content Include="Content\2011.1.315\Telerik\editor.png" />
+    <Content Include="Content\2011.1.315\Telerik\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Telerik\loading.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Telerik\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Telerik\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Telerik\sprite.png" />
+    <Content Include="Content\2011.1.315\Telerik\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Telerik\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Telerik\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Vista\editor.png" />
+    <Content Include="Content\2011.1.315\Vista\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Vista\loading.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Vista\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Vista\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Vista\sprite.png" />
+    <Content Include="Content\2011.1.315\Web20\editor.png" />
+    <Content Include="Content\2011.1.315\Web20\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Web20\loading.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Web20\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Web20\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Web20\sprite.png" />
+    <Content Include="Content\2011.1.315\Web20\treeview-line.png" />
+    <Content Include="Content\2011.1.315\Web20\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\Web20\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\WebBlue\editor.png" />
+    <Content Include="Content\2011.1.315\WebBlue\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\WebBlue\loading.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\WebBlue\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\WebBlue\sprite.png" />
+    <Content Include="Content\2011.1.315\WebBlue\treeview-line.png" />
+    <Content Include="Content\2011.1.315\WebBlue\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.315\WebBlue\treeview-nodes.png" />
+    <Content Include="Content\2011.1.315\Windows7\editor.png" />
+    <Content Include="Content\2011.1.315\Windows7\imagebrowser.png" />
+    <Content Include="Content\2011.1.315\Windows7\loading.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-h-both.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-h-top.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-hs-both.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-hs-bottom.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-hs-top.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-v-both.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-v-left.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-v-right.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-vs-both.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-vs-left.gif" />
+    <Content Include="Content\2011.1.315\Windows7\slider-vs-right.gif" />
+    <Content Include="Content\2011.1.315\Windows7\sprite-vertical.png" />
+    <Content Include="Content\2011.1.315\Windows7\sprite.png" />
+    <Content Include="css\customtod.css" />
+    <Content Include="DR_DoctorRoom.aspx" />
+    <Content Include="img\Expand.png" />
+    <Content Include="img\LogoNeo.png" />
+    <Content Include="index.html" />
+    <Content Include="js\views\customtod.js" />
+    <Content Include="MR_MedicalRecord.aspx" />
+    <Content Include="MR_SpecialClinic.aspx" />
+    <Content Include="NH_Login.aspx" />
+    <Content Include="NH_Main.Master" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\2011.1.315\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\2011.1.315\jquery.validate.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.autocomplete.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.calendar.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.combobox.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.common.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.datepicker.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.datetimepicker.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.draganddrop.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.editor.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.grid.editing.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.grid.filtering.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.grid.grouping.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.grid.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.grid.reordering.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.grid.resizing.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.imagebrowser.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.list.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.menu.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.panelbar.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.slider.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.splitter.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.tabstrip.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.textbox.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.timepicker.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.treeview.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.upload.min.js" />
+    <Content Include="Scripts\2011.1.315\telerik.window.min.js" />
+    <Content Include="scss\core\core.scss" />
+    <Content Include="scss\core\utilities\_background.scss" />
+    <Content Include="scss\core\utilities\_borders.scss" />
+    <Content Include="scss\core\utilities\_display.scss" />
+    <Content Include="scss\core\_animate.scss" />
+    <Content Include="scss\core\_aside.scss" />
+    <Content Include="scss\core\_avatars.scss" />
+    <Content Include="scss\core\_badge.scss" />
+    <Content Include="scss\core\_breadcrumb-menu.scss" />
+    <Content Include="scss\core\_breadcrumb.scss" />
+    <Content Include="scss\core\_buttons.scss" />
+    <Content Include="scss\core\_callout.scss" />
+    <Content Include="scss\core\_card.scss" />
+    <Content Include="scss\core\_charts.scss" />
+    <Content Include="scss\core\_dropdown-menu-right.scss" />
+    <Content Include="scss\core\_dropdown.scss" />
+    <Content Include="scss\core\_footer.scss" />
+    <Content Include="scss\core\_grid.scss" />
+    <Content Include="scss\core\_input-group.scss" />
+    <Content Include="scss\core\_layout.scss" />
+    <Content Include="scss\core\_loading.scss" />
+    <Content Include="scss\core\_mixins.scss" />
+    <Content Include="scss\core\_mobile.scss" />
+    <Content Include="scss\core\_modal.scss" />
+    <Content Include="scss\core\_nav.scss" />
+    <Content Include="scss\core\_navbar.scss" />
+    <Content Include="scss\core\_others.scss" />
+    <Content Include="scss\core\_progress.scss" />
+    <Content Include="scss\core\_rtl.scss" />
+    <Content Include="scss\core\_sidebar.scss" />
+    <Content Include="scss\core\_switches.scss" />
+    <Content Include="scss\core\_tables.scss" />
+    <Content Include="scss\core\_temp.scss" />
+    <Content Include="scss\core\_typography.scss" />
+    <Content Include="scss\core\_utilities.scss" />
+    <Content Include="scss\core\_variables.scss" />
+    <Content Include="scss\core\_widgets.scss" />
+    <Content Include="scss\style.scss" />
+    <Content Include="scss\uikits\email\_email.scss" />
+    <Content Include="scss\uikits\_uikits.scss" />
+    <Content Include="scss\vendors\chart.js\chart.scss" />
+    <Content Include="scss\vendors\daterangepicker\daterangepicker.scss" />
+    <Content Include="scss\vendors\fullcalendar\fullcalendar.scss" />
+    <Content Include="scss\vendors\gauge.js\gauge.scss" />
+    <Content Include="scss\vendors\ionRangeSlider\ionRangeSlider.scss" />
+    <Content Include="scss\vendors\select2\mixins\_gradients.scss" />
+    <Content Include="scss\vendors\select2\select2.scss" />
+    <Content Include="scss\vendors\select2\theme\classic\_defaults.scss" />
+    <Content Include="scss\vendors\select2\theme\classic\_layout.scss" />
+    <Content Include="scss\vendors\select2\theme\classic\_multiple.scss" />
+    <Content Include="scss\vendors\select2\theme\classic\_single.scss" />
+    <Content Include="scss\vendors\select2\theme\default\_layout.scss" />
+    <Content Include="scss\vendors\select2\theme\default\_multiple.scss" />
+    <Content Include="scss\vendors\select2\theme\default\_single.scss" />
+    <Content Include="scss\vendors\select2\_dropdown.scss" />
+    <Content Include="scss\vendors\select2\_multiple.scss" />
+    <Content Include="scss\vendors\select2\_select2-bootstrap.scss" />
+    <Content Include="scss\vendors\select2\_single.scss" />
+    <Content Include="scss\vendors\toastr\toastr.scss" />
+    <Content Include="scss\vendors\_variables.scss" />
+    <Content Include="scss\_bootstrap-variables.scss" />
+    <Content Include="scss\_core-variables.scss" />
+    <Content Include="scss\_custom.scss" />
+    <Content Include="AP_Appointment.aspx" />
+    <Content Include="SC_Screening.aspx" />
+    <Content Include="vendors\css\font-awesome.css.map" />
+    <Content Include="vendors\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendors\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendors\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendors\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendors\fonts\FontAwesome.otf" />
+    <Content Include="vendors\fonts\Simple-Line-Icons.eot" />
+    <Content Include="vendors\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="vendors\fonts\Simple-Line-Icons.woff" />
+    <Content Include="vendors\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="vendors\js\jquery.min.map" />
+    <Content Include="vendors\js\popper.min.js.map" />
+    <Content Include="vendors\js\quill.min.js.map" />
+    <Content Include="views\components\desktop.ini" />
+    <Content Include="views\desktop.ini" />
+    <Content Include="views\editors\desktop.ini" />
+    <Content Include="views\forms\desktop.ini" />
+    <Content Include="views\icons\desktop.ini" />
+    <Content Include="views\pages\desktop.ini" />
+    <Content Include="views\plugins\desktop.ini" />
+    <Content Include="views\UIkits\desktop.ini" />
+    <Content Include="views\UIkits\email\desktop.ini" />
+    <Content Include="views\UIkits\invoicing\desktop.ini" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\style.css" />
+    <Content Include="css\style.min.css" />
+    <Content Include="img\001.png" />
+    <Content Include="img\avatars\1.jpg" />
+    <Content Include="img\avatars\2.jpg" />
+    <Content Include="img\avatars\3.jpg" />
+    <Content Include="img\avatars\4.jpg" />
+    <Content Include="img\avatars\5.jpg" />
+    <Content Include="img\avatars\6.jpg" />
+    <Content Include="img\avatars\7.jpg" />
+    <Content Include="img\avatars\8.jpg" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\flags\Afghanistan.png" />
+    <Content Include="img\flags\African Union.png" />
+    <Content Include="img\flags\Albania.png" />
+    <Content Include="img\flags\Algeria.png" />
+    <Content Include="img\flags\American Samoa.png" />
+    <Content Include="img\flags\Andorra.png" />
+    <Content Include="img\flags\Angola.png" />
+    <Content Include="img\flags\Anguilla.png" />
+    <Content Include="img\flags\Antarctica.png" />
+    <Content Include="img\flags\Antigua &amp; Barbuda.png" />
+    <Content Include="img\flags\Arab League.png" />
+    <Content Include="img\flags\Argentina.png" />
+    <Content Include="img\flags\Armenia.png" />
+    <Content Include="img\flags\Aruba.png" />
+    <Content Include="img\flags\ASEAN.png" />
+    <Content Include="img\flags\Australia.png" />
+    <Content Include="img\flags\Austria.png" />
+    <Content Include="img\flags\Azerbaijan.png" />
+    <Content Include="img\flags\Bahamas.png" />
+    <Content Include="img\flags\Bahrain.png" />
+    <Content Include="img\flags\Bangladesh.png" />
+    <Content Include="img\flags\Barbados.png" />
+    <Content Include="img\flags\Belarus.png" />
+    <Content Include="img\flags\Belgium.png" />
+    <Content Include="img\flags\Belize.png" />
+    <Content Include="img\flags\Benin.png" />
+    <Content Include="img\flags\Bermuda.png" />
+    <Content Include="img\flags\Bhutan.png" />
+    <Content Include="img\flags\Bolivia.png" />
+    <Content Include="img\flags\Bosnia &amp; Herzegovina.png" />
+    <Content Include="img\flags\Botswana.png" />
+    <Content Include="img\flags\Brazil.png" />
+    <Content Include="img\flags\Brunei.png" />
+    <Content Include="img\flags\Bulgaria.png" />
+    <Content Include="img\flags\Burkina Faso.png" />
+    <Content Include="img\flags\Burundi.png" />
+    <Content Include="img\flags\Cambodja.png" />
+    <Content Include="img\flags\Cameroon.png" />
+    <Content Include="img\flags\Canada.png" />
+    <Content Include="img\flags\Cape Verde.png" />
+    <Content Include="img\flags\CARICOM.png" />
+    <Content Include="img\flags\Cayman Islands.png" />
+    <Content Include="img\flags\Central African Republic.png" />
+    <Content Include="img\flags\Chad.png" />
+    <Content Include="img\flags\Chile.png" />
+    <Content Include="img\flags\China.png" />
+    <Content Include="img\flags\CIS.png" />
+    <Content Include="img\flags\Colombia.png" />
+    <Content Include="img\flags\Commonwealth.png" />
+    <Content Include="img\flags\Comoros.png" />
+    <Content Include="img\flags\Congo-Brazzaville.png" />
+    <Content Include="img\flags\Congo-Kinshasa%28Zaire%29.png" />
+    <Content Include="img\flags\Cook Islands.png" />
+    <Content Include="img\flags\Costa Rica.png" />
+    <Content Include="img\flags\Cote d%27Ivoire.png" />
+    <Content Include="img\flags\Croatia.png" />
+    <Content Include="img\flags\Cuba.png" />
+    <Content Include="img\flags\Cyprus.png" />
+    <Content Include="img\flags\Czech Republic.png" />
+    <Content Include="img\flags\Denmark.png" />
+    <Content Include="img\flags\Djibouti.png" />
+    <Content Include="img\flags\Dominica.png" />
+    <Content Include="img\flags\Dominican Republic.png" />
+    <Content Include="img\flags\Ecuador.png" />
+    <Content Include="img\flags\Egypt.png" />
+    <Content Include="img\flags\El Salvador.png" />
+    <Content Include="img\flags\England.png" />
+    <Content Include="img\flags\Equatorial Guinea.png" />
+    <Content Include="img\flags\Eritrea.png" />
+    <Content Include="img\flags\Estonia.png" />
+    <Content Include="img\flags\Ethiopia.png" />
+    <Content Include="img\flags\European Union.png" />
+    <Content Include="img\flags\Faroes.png" />
+    <Content Include="img\flags\Fiji.png" />
+    <Content Include="img\flags\Finland.png" />
+    <Content Include="img\flags\France.png" />
+    <Content Include="img\flags\Gabon.png" />
+    <Content Include="img\flags\Gambia.png" />
+    <Content Include="img\flags\Georgia.png" />
+    <Content Include="img\flags\Germany.png" />
+    <Content Include="img\flags\Ghana.png" />
+    <Content Include="img\flags\Gibraltar.png" />
+    <Content Include="img\flags\Greece.png" />
+    <Content Include="img\flags\Greenland.png" />
+    <Content Include="img\flags\Grenada.png" />
+    <Content Include="img\flags\Guadeloupe.png" />
+    <Content Include="img\flags\Guam.png" />
+    <Content Include="img\flags\Guatemala.png" />
+    <Content Include="img\flags\Guernsey.png" />
+    <Content Include="img\flags\Guinea-Bissau.png" />
+    <Content Include="img\flags\Guinea.png" />
+    <Content Include="img\flags\Guyana.png" />
+    <Content Include="img\flags\Haiti.png" />
+    <Content Include="img\flags\Honduras.png" />
+    <Content Include="img\flags\Hong Kong.png" />
+    <Content Include="img\flags\Hungary.png" />
+    <Content Include="img\flags\Iceland.png" />
+    <Content Include="img\flags\India.png" />
+    <Content Include="img\flags\Indonezia.png" />
+    <Content Include="img\flags\Iran.png" />
+    <Content Include="img\flags\Iraq.png" />
+    <Content Include="img\flags\Ireland.png" />
+    <Content Include="img\flags\Islamic Conference.png" />
+    <Content Include="img\flags\Isle of Man.png" />
+    <Content Include="img\flags\Israel.png" />
+    <Content Include="img\flags\Italy.png" />
+    <Content Include="img\flags\Jamaica.png" />
+    <Content Include="img\flags\Japan.png" />
+    <Content Include="img\flags\Jersey.png" />
+    <Content Include="img\flags\Jordan.png" />
+    <Content Include="img\flags\Kazakhstan.png" />
+    <Content Include="img\flags\Kenya.png" />
+    <Content Include="img\flags\Kiribati.png" />
+    <Content Include="img\flags\Kosovo.png" />
+    <Content Include="img\flags\Kuwait.png" />
+    <Content Include="img\flags\Kyrgyzstan.png" />
+    <Content Include="img\flags\Laos.png" />
+    <Content Include="img\flags\Latvia.png" />
+    <Content Include="img\flags\Lebanon.png" />
+    <Content Include="img\flags\Lesotho.png" />
+    <Content Include="img\flags\Liberia.png" />
+    <Content Include="img\flags\Libya.png" />
+    <Content Include="img\flags\Liechtenshein.png" />
+    <Content Include="img\flags\Lithuania.png" />
+    <Content Include="img\flags\Luxembourg.png" />
+    <Content Include="img\flags\Macao.png" />
+    <Content Include="img\flags\Macedonia.png" />
+    <Content Include="img\flags\Madagascar.png" />
+    <Content Include="img\flags\Malawi.png" />
+    <Content Include="img\flags\Malaysia.png" />
+    <Content Include="img\flags\Maldives.png" />
+    <Content Include="img\flags\Mali.png" />
+    <Content Include="img\flags\Malta.png" />
+    <Content Include="img\flags\Marshall Islands.png" />
+    <Content Include="img\flags\Martinique.png" />
+    <Content Include="img\flags\Mauritania.png" />
+    <Content Include="img\flags\Mauritius.png" />
+    <Content Include="img\flags\Mexico.png" />
+    <Content Include="img\flags\Micronesia.png" />
+    <Content Include="img\flags\Moldova.png" />
+    <Content Include="img\flags\Monaco.png" />
+    <Content Include="img\flags\Mongolia.png" />
+    <Content Include="img\flags\Montenegro.png" />
+    <Content Include="img\flags\Montserrat.png" />
+    <Content Include="img\flags\Morocco.png" />
+    <Content Include="img\flags\Mozambique.png" />
+    <Content Include="img\flags\Myanmar%28Burma%29.png" />
+    <Content Include="img\flags\Namibia.png" />
+    <Content Include="img\flags\NATO.png" />
+    <Content Include="img\flags\Nauru.png" />
+    <Content Include="img\flags\Nepal.png" />
+    <Content Include="img\flags\Netherlands Antilles.png" />
+    <Content Include="img\flags\Netherlands.png" />
+    <Content Include="img\flags\New Caledonia.png" />
+    <Content Include="img\flags\New Zealand.png" />
+    <Content Include="img\flags\Nicaragua.png" />
+    <Content Include="img\flags\Niger.png" />
+    <Content Include="img\flags\Nigeria.png" />
+    <Content Include="img\flags\North Korea.png" />
+    <Content Include="img\flags\Northern Cyprus.png" />
+    <Content Include="img\flags\Northern Ireland.png" />
+    <Content Include="img\flags\Norway.png" />
+    <Content Include="img\flags\Olimpic Movement.png" />
+    <Content Include="img\flags\Oman.png" />
+    <Content Include="img\flags\OPEC.png" />
+    <Content Include="img\flags\Pakistan.png" />
+    <Content Include="img\flags\Palau.png" />
+    <Content Include="img\flags\Palestine.png" />
+    <Content Include="img\flags\Panama.png" />
+    <Content Include="img\flags\Papua New Guinea.png" />
+    <Content Include="img\flags\Paraguay.png" />
+    <Content Include="img\flags\Peru.png" />
+    <Content Include="img\flags\Philippines.png" />
+    <Content Include="img\flags\Poland.png" />
+    <Content Include="img\flags\Portugal.png" />
+    <Content Include="img\flags\Puerto Rico.png" />
+    <Content Include="img\flags\Qatar.png" />
+    <Content Include="img\flags\Red Cross.png" />
+    <Content Include="img\flags\Reunion.png" />
+    <Content Include="img\flags\Romania.png" />
+    <Content Include="img\flags\Russia.png" />
+    <Content Include="img\flags\Rwanda.png" />
+    <Content Include="img\flags\Saint Lucia.png" />
+    <Content Include="img\flags\Samoa.png" />
+    <Content Include="img\flags\San Marino.png" />
+    <Content Include="img\flags\Sao Tome &amp; Principe.png" />
+    <Content Include="img\flags\Saudi Arabia.png" />
+    <Content Include="img\flags\Scotland.png" />
+    <Content Include="img\flags\Senegal.png" />
+    <Content Include="img\flags\Serbia%28Yugoslavia%29.png" />
+    <Content Include="img\flags\Seychelles.png" />
+    <Content Include="img\flags\Sierra Leone.png" />
+    <Content Include="img\flags\Singapore.png" />
+    <Content Include="img\flags\Slovakia.png" />
+    <Content Include="img\flags\Slovenia.png" />
+    <Content Include="img\flags\Solomon Islands.png" />
+    <Content Include="img\flags\Somalia.png" />
+    <Content Include="img\flags\Somaliland.png" />
+    <Content Include="img\flags\South Africa.png" />
+    <Content Include="img\flags\South Korea.png" />
+    <Content Include="img\flags\Spain.png" />
+    <Content Include="img\flags\Sri Lanka.png" />
+    <Content Include="img\flags\St Kitts &amp; Nevis.png" />
+    <Content Include="img\flags\St Vincent &amp; the Grenadines.png" />
+    <Content Include="img\flags\Sudan.png" />
+    <Content Include="img\flags\Suriname.png" />
+    <Content Include="img\flags\Swaziland.png" />
+    <Content Include="img\flags\Sweden.png" />
+    <Content Include="img\flags\Switzerland.png" />
+    <Content Include="img\flags\Syria.png" />
+    <Content Include="img\flags\Tahiti%28French Polinesia%29.png" />
+    <Content Include="img\flags\Taiwan.png" />
+    <Content Include="img\flags\Tajikistan.png" />
+    <Content Include="img\flags\Tanzania.png" />
+    <Content Include="img\flags\Thailand.png" />
+    <Content Include="img\flags\Timor-Leste.png" />
+    <Content Include="img\flags\Togo.png" />
+    <Content Include="img\flags\Tonga.png" />
+    <Content Include="img\flags\Trinidad &amp; Tobago.png" />
+    <Content Include="img\flags\Tunisia.png" />
+    <Content Include="img\flags\Turkey.png" />
+    <Content Include="img\flags\Turkmenistan.png" />
+    <Content Include="img\flags\Turks and Caicos Islands.png" />
+    <Content Include="img\flags\Tuvalu.png" />
+    <Content Include="img\flags\Uganda.png" />
+    <Content Include="img\flags\Ukraine.png" />
+    <Content Include="img\flags\United Arab Emirates.png" />
+    <Content Include="img\flags\United Nations.png" />
+    <Content Include="img\flags\United-Kingdom.png" />
+    <Content Include="img\flags\Uruguay.png" />
+    <Content Include="img\flags\USA.png" />
+    <Content Include="img\flags\Uzbekistan.png" />
+    <Content Include="img\flags\Vanutau.png" />
+    <Content Include="img\flags\Vatican City.png" />
+    <Content Include="img\flags\Venezuela.png" />
+    <Content Include="img\flags\Viet Nam.png" />
+    <Content Include="img\flags\Virgin Islands British.png" />
+    <Content Include="img\flags\Virgin Islands US.png" />
+    <Content Include="img\flags\Wales.png" />
+    <Content Include="img\flags\Western Sahara.png" />
+    <Content Include="img\flags\Yemen.png" />
+    <Content Include="img\flags\Zambia.png" />
+    <Content Include="img\flags\Zimbabwe.png" />
+    <Content Include="img\logo-symbol.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\vendors\ionRangeSlider\sprite-skin-modern.png" />
+    <Content Include="js\app.js" />
+    <Content Include="js\views\advanced-forms.js" />
+    <Content Include="js\views\calendar.js" />
+    <Content Include="js\views\charts.js" />
+    <Content Include="js\views\code-editor.js" />
+    <Content Include="js\views\draggable-cards.js" />
+    <Content Include="js\views\google-maps.js" />
+    <Content Include="js\views\loading-buttons.js" />
+    <Content Include="js\views\main.js" />
+    <Content Include="js\views\markdown-editor.js" />
+    <Content Include="js\views\notifications.js" />
+    <Content Include="js\views\sliders.js" />
+    <Content Include="js\views\tables.js" />
+    <Content Include="js\views\text-editors.js" />
+    <Content Include="js\views\validation.js" />
+    <Content Include="js\views\widgets.js" />
+    <Content Include="vendors\css\chart.css" />
+    <Content Include="vendors\css\chart.min.css" />
+    <Content Include="vendors\css\codemirror.min.css" />
+    <Content Include="vendors\css\dataTables.bootstrap4.min.css" />
+    <Content Include="vendors\css\daterangepicker.css" />
+    <Content Include="vendors\css\daterangepicker.min.css" />
+    <Content Include="vendors\css\font-awesome.min.css" />
+    <Content Include="vendors\css\fullcalendar.css" />
+    <Content Include="vendors\css\fullcalendar.min.css" />
+    <Content Include="vendors\css\gauge.css" />
+    <Content Include="vendors\css\gauge.min.css" />
+    <Content Include="vendors\css\ionRangeSlider.css" />
+    <Content Include="vendors\css\ionRangeSlider.min.css" />
+    <Content Include="vendors\css\ladda-themeless.min.css" />
+    <Content Include="vendors\css\quill.snow.min.css" />
+    <Content Include="vendors\css\select2.css" />
+    <Content Include="vendors\css\select2.min.css" />
+    <Content Include="vendors\css\simple-line-icons.min.css" />
+    <Content Include="vendors\css\spinkit.min.css" />
+    <Content Include="vendors\css\toastr.css" />
+    <Content Include="vendors\css\toastr.min.css" />
+    <Content Include="vendors\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendors\fonts\Simple-Line-Icons.svg" />
+    <Content Include="vendors\img\sprite-skin-modern.png" />
+    <Content Include="vendors\js\bootstrap.min.js" />
+    <Content Include="vendors\js\Chart.min.js" />
+    <Content Include="vendors\js\codemirror.min.js" />
+    <Content Include="vendors\js\dataTables.bootstrap4.min.js" />
+    <Content Include="vendors\js\daterangepicker.min.js" />
+    <Content Include="vendors\js\fullcalendar.min.js" />
+    <Content Include="vendors\js\gauge.min.js" />
+    <Content Include="vendors\js\gcal.min.js" />
+    <Content Include="vendors\js\ion.rangeSlider.min.js" />
+    <Content Include="vendors\js\jquery-ui.min.js" />
+    <Content Include="vendors\js\jquery.dataTables.min.js" />
+    <Content Include="vendors\js\jquery.maskedinput.min.js" />
+    <Content Include="vendors\js\jquery.min.js" />
+    <Content Include="vendors\js\jquery.validate.min.js" />
+    <Content Include="vendors\js\ladda.min.js" />
+    <Content Include="vendors\js\markdown.min.js" />
+    <Content Include="vendors\js\moment.min.js" />
+    <Content Include="vendors\js\pace.min.js" />
+    <Content Include="vendors\js\popper.min.js" />
+    <Content Include="vendors\js\quill.min.js" />
+    <Content Include="vendors\js\select2.min.js" />
+    <Content Include="vendors\js\spin.min.js" />
+    <Content Include="vendors\js\toastr.min.js" />
+    <Content Include="vendors\js\xml.min.js" />
+    <Content Include="views\blank.html" />
+    <Content Include="views\charts.html" />
+    <Content Include="views\components\buttons.html" />
+    <Content Include="views\components\cards.html" />
+    <Content Include="views\components\modals.html" />
+    <Content Include="views\components\social-buttons.html" />
+    <Content Include="views\components\switches.html" />
+    <Content Include="views\components\tables.html" />
+    <Content Include="views\components\tabs.html" />
+    <Content Include="views\editors\code-editor.html" />
+    <Content Include="views\editors\markdown-editor.html" />
+    <Content Include="views\editors\text-editors.html" />
+    <Content Include="views\forms\advanced-forms.html" />
+    <Content Include="views\forms\basic-forms.html" />
+    <Content Include="views\forms\validation.html" />
+    <Content Include="views\google-maps.html" />
+    <Content Include="views\icons\font-awesome.html" />
+    <Content Include="views\icons\simple-line-icons.html" />
+    <Content Include="views\main.html" />
+    <Content Include="views\pages\404.html" />
+    <Content Include="views\pages\500.html" />
+    <Content Include="views\pages\login.html" />
+    <Content Include="views\pages\register.html" />
+    <Content Include="views\plugins\calendar.html" />
+    <Content Include="views\plugins\draggable-cards.html" />
+    <Content Include="views\plugins\loading-buttons.html" />
+    <Content Include="views\plugins\notifications.html" />
+    <Content Include="views\plugins\sliders.html" />
+    <Content Include="views\plugins\spinners.html" />
+    <Content Include="views\plugins\tables.html" />
+    <Content Include="views\UIkits\email\compose.html" />
+    <Content Include="views\UIkits\email\inbox.html" />
+    <Content Include="views\UIkits\email\message.html" />
+    <Content Include="views\UIkits\invoicing\invoice.html" />
+    <Content Include="views\widgets.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\EditorLocalization.bg-BG.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.bg-BG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.de-DE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.fr-FR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.pl-PL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.pl-PL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.pt-BR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.pt-BR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.ru-RU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.uk-UA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.bg-BG.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.bg-BG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.de-DE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.es-ES.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.es-ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.fr-FR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.pl-PL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.pl-PL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.pt-BR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.pt-BR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.pt-PT.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.pt-PT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.ru-RU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.uk-UA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UploadLocalization.bg-BG.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UploadLocalization.bg-BG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UploadLocalization.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UploadLocalization.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DR_DoctorRoom.aspx.cs">
+      <DependentUpon>DR_DoctorRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DR_DoctorRoom.aspx.designer.cs">
+      <DependentUpon>DR_DoctorRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MR_MedicalRecord.aspx.cs">
+      <DependentUpon>MR_MedicalRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MR_MedicalRecord.aspx.designer.cs">
+      <DependentUpon>MR_MedicalRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MR_SpecialClinic.aspx.cs">
+      <DependentUpon>MR_SpecialClinic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MR_SpecialClinic.aspx.designer.cs">
+      <DependentUpon>MR_SpecialClinic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NH_Login.aspx.cs">
+      <DependentUpon>NH_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NH_Login.aspx.designer.cs">
+      <DependentUpon>NH_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NH_Main.Master.cs">
+      <DependentUpon>NH_Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NH_Main.Master.designer.cs">
+      <DependentUpon>NH_Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AP_Appointment.aspx.cs">
+      <DependentUpon>AP_Appointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AP_Appointment.aspx.designer.cs">
+      <DependentUpon>AP_Appointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SC_Screening.aspx.cs">
+      <DependentUpon>SC_Screening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SC_Screening.aspx.designer.cs">
+      <DependentUpon>SC_Screening.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\UploadLocalization.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UploadLocalization.en-US.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\UploadLocalization.bg-BG.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UploadLocalization.bg-BG.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.uk-UA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.uk-UA.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.ru-RU.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.pt-PT.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.pt-PT.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.pt-BR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.pt-BR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.pl-PL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.pl-PL.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.fr-FR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.es-ES.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.es-ES.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.en-US.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.de-DE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.de-DE.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.bg-BG.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.bg-BG.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.uk-UA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.uk-UA.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.ru-RU.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.pt-BR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.pt-BR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.pl-PL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.pl-PL.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.fr-FR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.en-US.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.de-DE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.de-DE.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.bg-BG.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.bg-BG.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49928</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49928/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
